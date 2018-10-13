@@ -53,7 +53,8 @@ function draw() {
 
     // Check if ball is bouncing off top
     if (ball.y - ball.radius <= 0) {
-        // ????  Add code
+       ball.y = height - ball.radius;
+        ball.dy = ball.dy * -1;
     }
 
     // Check if ball is hitting right paddle
